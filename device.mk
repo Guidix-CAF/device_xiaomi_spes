@@ -68,13 +68,18 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi \
+    android.hardware.biometrics.fingerprint-service.xiaomi \
     com.fingerprints.extension@1.0.vendor \
     libvendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
     vendor.xiaomi.hardware.fingerprintextension@1.0.vendor
 
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.hardware.fp.sideCap=true
+
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.fingerprint.type=side \
+    ro.vendor.fingerprint.sensor_location=1080|930|150|local:4630946773257169537 \
+    persist.vendor.fingerprint.sensor_modules=fpc,goodix
 
 # Health
 TARGET_USE_HIDL_QTI_HEALTH := true
