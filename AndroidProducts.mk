@@ -1,5 +1,5 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/statix_spes.mk
+    $(LOCAL_DIR)/yaap_spes.mk
 
 COMMON_LUNCH_CHOICES := \
-    statix_spes-user
+    yaap_spes-userdebug

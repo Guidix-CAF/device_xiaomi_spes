@@ -80,14 +80,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
 # Health
 TARGET_USE_HIDL_QTI_HEALTH := true
 
-# Kernel
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)-kernel/Image
-
-PRODUCT_COPY_FILES += \
-    $(TARGET_PREBUILT_KERNEL):kernel
-
-PRODUCT_VENDOR_KERNEL_HEADERS += $(LOCAL_PATH)-kernel/kernel-headers
-
 # Media
 PRODUCT_ODM_PROPERTIES += \
     media.settings.xml=/vendor/etc/media_profiles_khaje.xml
