@@ -29,6 +29,7 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 KERNEL_DEFCONFIG := vendor/spes-perf_defconfig
 KERNEL_CUSTOM_LLVM := true
 KERNEL_FULL_LLVM := true
+TARGET_KERNEL_CONFIG := vendor/spes-perf_defconfig
 TARGET_KERNEL_SOURCE := kernel/xiaomi/spes
 
 BOARD_KERNEL_CMDLINE +=  init.is_dt2w_sensor=1
